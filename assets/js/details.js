@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 	// Pagination
 	const prevID = id - 1 <= 0 ? MAX_POKEMON_NUMBER_LIMIT : id - 1;
 	const nextID = id + 1 > MAX_POKEMON_NUMBER_LIMIT ? 1 : id + 1;
-	prevButton.href = `/details.html?id=${prevID}`;
-	nextButton.href = `/details.html?id=${nextID}`;
+	prevButton.href = `/pokedex-details?id=${prevID}`;
+	nextButton.href = `/pokedex-details?id=${nextID}`;
 
 	await loadPokemonInformationsFromAPI(id);
 	await displayPokemonDetails(pokemon);
