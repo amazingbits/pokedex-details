@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Details</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div class="background">
+    <img src="./assets/img/pokedex.svg" />
+  </div>
+
+  <div class="dw-name">
+    <a href="/index.html">
+      <i data-feather="arrow-left" class="feather-32"></i>
+    </a>
+    <p></p>
+    <span></span>
+  </div>
+
+  <div class="details-wrapper">
+
+    <div class="details-body">
+
+      <div class="dw-pokemon-header">
+        <a href="#" class="prev">
+          <i data-feather="chevron-left" class="feather-32"></i>
+        </a>
+
+        <div class="dw-pokemon-image loading">
+          <img src="./assets/img/favicon.png" />
+        </div>
+
+        <a href="#" class="next">
+          <i data-feather="chevron-right" class="feather-32"></i>
+        </a>
+      </div>
+
+      <div class="dw-pokemon-types">
+        <div class="dw-pokemon-type loading"></div>
+        <div class="dw-pokemon-type loading"></div>
+        <div class="dw-pokemon-type loading"></div>
+      </div>
+
+      <div class="dw-pokemon-about">
+
+        <div class="dw-card dw-pokemon-weight loading">
+          <i data-feather="feather" class="feather-40"></i>
+
+          <div class="dw-title">
+            <span>Weight</span>
+          </div>
+          <div class="dw-info dw-weight">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="dw-card dw-pokemon-height loading">
+          <i data-feather="trending-up" class="feather-40"></i>
+
+          <div class="dw-title">
+            <span>Height</span>
+          </div>
+          <div class="dw-info dw-height">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="dw-card dw-pokemon-moves loading">
+          <i data-feather="layers" class="feather-40"></i>
+
+          <div class="dw-title">
+            <span>Moves</span>
+          </div>
+          <div class="dw-info">
+            <div class="dw-pokemon-move"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dw-pokemon-stats">
+
+        <div class="dw-pokemon-stat loading">
+          <span>HP</span>
+          <div class="progress-bar pb-hp">
+            <div class="progress" style="width: 38.5%; background-color: green;"></div>
+          </div>
+        </div>
+
+        <div class="dw-pokemon-stat loading">
+          <span>ATK</span>
+          <div class="progress-bar pb-atk">
+            <div class="progress" style="width: 49.5%; background-color: green;"></div>
+          </div>
+        </div>
+
+        <div class="dw-pokemon-stat loading">
+          <span>DEF</span>
+          <div class="progress-bar pb-def">
+            <div class="progress" style="width: 25.5%;  background-color: green;"></div>
+          </div>
+        </div>
+
+        <div class="dw-pokemon-stat loading">
+          <span>SATK</span>
+          <div class="progress-bar pb-satk">
+            <div class="progress" style="width: 5.5%;  background-color: green;"></div>
+          </div>
+        </div>
+
+        <div class="dw-pokemon-stat loading">
+          <span>SDEF</span>
+          <div class="progress-bar pb-sdef">
+            <div class="progress" style="width: 38.5%;  background-color: green;"></div>
+          </div>
+        </div>
+
+        <div class="dw-pokemon-stat loading">
+          <span>SPD</span>
+          <div class="progress-bar pb-spd">
+            <div class="progress" style="width: 80.5%; background-color: green;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./assets/js/vendor/feather-icons.js"></script>
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/helpers.js"></script>
+  <script type="module" src="./assets/js/details.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
